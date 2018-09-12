@@ -8,7 +8,7 @@ public class User
 	
 	// Method signature consists of...
 	// Accessor - public, private or protected.
-	// Return type - ANy type or void for nothing.
+	// Return type - Any type or void for nothing.
 	// Method name - make it good so people know what the method does.
 	// Argument list - parameters passed to the method.
 	public String getUsername() {
