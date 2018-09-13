@@ -41,7 +41,26 @@ public class App {
 		// for loop
 		for(int x = 0; x < 100; x++)
 		{
+			// Prompt user to guess a letter.
+			
+			// Prompt user with mask of word(recalculate mask)
+			
+			// Prompt user with hint.
+			
+			// Collect user input.
+			
+			// Repeat..
+			
+			
+			
 			System.out.println(x);
+			
 		} // increment counter
+	}
+	
+	// Ask Mike how the heck to do this...
+	private void generateMask()
+	{
+		// Print the word for now
 	}
 }
