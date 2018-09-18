@@ -28,10 +28,17 @@ public class Car2 {
 		u3.setCarBattery("Odyssey");
 		
 		System.out.println(u1.getCarBattery());
+		
 		System.out.println(u2.getFloorMatts());
+		
 		System.out.println(u3.getBrakePads());
 		
-
+		System.out.println(u1.getCarWheels());
+		
+		System.out.println(u2.getWiperBlades());
+		
+		System.out.println(u3.getWiperBlades());
+		
 	}
 
 }
