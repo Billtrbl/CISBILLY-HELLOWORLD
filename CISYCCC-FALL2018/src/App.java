@@ -61,6 +61,6 @@ public class App {
 	// Ask Mike how the heck to do this...
 	private void generateMask()
 	{
-		// Print the word for now
+		// Print the word for now.
 	}
 }
