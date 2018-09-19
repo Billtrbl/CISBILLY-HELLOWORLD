@@ -1,4 +1,4 @@
-package ClassAssignments;
+package edu.sbillysusanto.java.week2;
 
 public class Loop {
 
