@@ -1,4 +1,4 @@
-package edu.sbillysusanto.java.week2;
+package ClassAssignmentsWeek2;
 
 public class Car1 
 {
