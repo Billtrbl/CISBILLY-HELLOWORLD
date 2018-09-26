@@ -1,8 +1,8 @@
-package ClassAssignmentsWeek2;
+package CISAssignmentsWeek3;
 
-public class Loop {
+public class WhileLoop {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		
 		// counter is a variable
 		
@@ -11,9 +11,9 @@ public class Loop {
 		// the syntax for the loop is just "while"
 		
 		
-		while (counter < 20) {
+		while (counter < 7) {
 			
-			// "counter < 20" is a condition that the loop will follow
+			// "counter < 7" is a condition that the loop will follow
 			
 			System.out.println(counter);
 			

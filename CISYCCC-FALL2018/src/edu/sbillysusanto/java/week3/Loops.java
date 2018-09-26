@@ -1,8 +1,8 @@
 package edu.sbillysusanto.java.week3;
 
-public class Loops 
+public class Loops
 {
-
+	
 	public void forLoopSample1() {
 		
 		for(int i= 0; i < 10; i++)

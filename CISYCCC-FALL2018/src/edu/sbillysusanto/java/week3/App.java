@@ -7,7 +7,7 @@ public class App
 	
 	Loops l = new Loops();
 	l.createMask();
-		
+
 	}
 	
 }
