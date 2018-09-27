@@ -1,4 +1,4 @@
-package ClassAssignmentsWeek2;
+package CISAssignmentsWeek2;
 
 public class ForLoop {
 
