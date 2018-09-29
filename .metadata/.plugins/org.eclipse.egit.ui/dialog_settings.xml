@@ -7,8 +7,10 @@
 		<item value="github.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="file:///C:\Users\Billy\eclipse-workspace\MikeBourgeois\learn-java"/>
 		<item value="https://github.com/Billtrbl/CIS-BILLYS.git"/>
 	</list>
 	<section name="GitImportWizard">
+		<item value="true" key="GitProjectsImportPage.STORE_NESTED_PROJECTS"/>
 	</section>
 </section>
