@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HangmanPLAY 
 {
-	private static String[] words = {"Strawberry, Watermelon, Orange, Cherry"};
+	private static String[] words = {"Cat"};
 	
 	public static void main(String[] Args)
 {
