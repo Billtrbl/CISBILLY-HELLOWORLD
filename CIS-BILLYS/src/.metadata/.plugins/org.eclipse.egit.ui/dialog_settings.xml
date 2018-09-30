@@ -11,5 +11,6 @@
 		<item value="https://github.com/mikebourgeois/learn-java.git"/>
 	</list>
 	<section name="GitImportWizard">
+		<item value="true" key="GitProjectsImportPage.STORE_NESTED_PROJECTS"/>
 	</section>
 </section>
