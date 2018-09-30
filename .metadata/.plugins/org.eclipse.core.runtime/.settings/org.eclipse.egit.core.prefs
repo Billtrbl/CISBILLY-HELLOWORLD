@@ -1,3 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\Users\\Billy\\git\\CIS-BILLYS\\src\\CIS-BILLYS\\.git;C\:\\Users\\Billy\\git\\learn-java\\.git;C\:\\Users\\Billy\\git\\Thisname\\.git;C\:\\Users\\Billy\\.git;
-GitRepositoriesView.GitDirectories.relative=C\:\\Users\\Billy\\git\\CIS-BILLYS\\src\\CIS-BILLYS\\.git;C\:\\Users\\Billy\\git\\learn-java\\.git;C\:\\Users\\Billy\\git\\Thisname\\.git;C\:\\Users\\Billy\\.git;
+GitRepositoriesView.GitDirectories=C\:\\Users\\Billy\\git\\CIS-BILLYS\\src\\CIS-BILLYS\\.git;C\:\\eclipse-workspace\\CISBILLY-HELLOWORLD\\.git;C\:\\Users\\Billy\\git\\learn-java\\.git;C\:\\Users\\Billy\\git\\Thisname\\.git;C\:\\Users\\Billy\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Users\\Billy\\git\\CIS-BILLYS\\src\\CIS-BILLYS\\.git;.git;C\:\\Users\\Billy\\git\\learn-java\\.git;C\:\\Users\\Billy\\git\\Thisname\\.git;C\:\\Users\\Billy\\.git;
+RepositorySearchDialogSearchPath=C\:\\eclipse-workspace\\CISBILLY-HELLOWORLD
 eclipse.preferences.version=1
