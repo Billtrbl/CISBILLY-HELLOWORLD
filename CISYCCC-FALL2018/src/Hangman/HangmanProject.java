@@ -44,7 +44,7 @@ public class HangmanProject {
 			
 			if(word.contains(x+""))
 			{
-				for(int y = 0; y < word.length(); y++)	// this loop will check all the indexes for the 
+				for(int y = 0; y < word.length();y++)	// this loop will check all the indexes for the 
 				{
 					if(word.charAt(y)==x)		// the character and will replace '*' by
 					{
