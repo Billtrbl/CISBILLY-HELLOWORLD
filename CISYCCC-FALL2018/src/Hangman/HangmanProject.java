@@ -32,7 +32,7 @@ public class HangmanProject {
 		
 		while(life>0)
 		{
-			char x = s.next().charAt(0);		//character input by user
+			char x=s.next().charAt(0);		// character input by user
 			
 			if(l.contains(x))
 			{
@@ -54,7 +54,7 @@ public class HangmanProject {
 			}
 			else 
 			{ 
-				life--; 						// life will decrease if the character entered isn't there in the word
+				life--; 						// life will decrease if the character entered isn't right
 			}
 			
 			if(word.equals(String.valueOf(filler)))
