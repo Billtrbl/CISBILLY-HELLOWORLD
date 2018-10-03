@@ -12,7 +12,7 @@ public class HangmanProject {
 	{
 		char[] filler = new char[word.length()];
 		int i = 0;
-		while(i<word.length())
+		while(i < word.length())
 		{
 			filler[i] = '*';
 			if(word.charAt(i) == ' ')
@@ -23,16 +23,16 @@ public class HangmanProject {
 		}
 		
 		System.out.println(filler);
-		System.out.println("      		Life remaining = " + life );
+		System.out.println("          the number of guesses you have left = " + life );
 		
 		Scanner s = new Scanner(System.in);
 		
 		ArrayList<Character> l=new ArrayList<Character>();
 		
 		
-		while(life>0)
+		while(life > 0)
 		{
-			char x=s.next().charAt(0);		// character input by user
+			char x = s.next().charAt(0);		// character input by user
 			
 			if(l.contains(x))
 			{
@@ -42,13 +42,13 @@ public class HangmanProject {
 			
 			l.add(x);
 			
-			if(word.contains(x+""))
+			if(word.contains(x + ""))
 			{
-				for(int y = 0; y < word.length();y++)	// this loop will check all the indexes for the 
+				for(int y = 0; y < word.length(); y++)	// this loop will check all the indexes for the 
 				{
-					if(word.charAt(y)==x)		// the character and will replace '*' by
+					if(word.charAt(y) == x)		// the character and will replace '*' by
 					{
-						filler[y]=x;			// the character
+						filler[y] = x;			// the character
 					}
 				}
 			}
@@ -65,7 +65,7 @@ public class HangmanProject {
 			}
 			
 			System.out.println(filler);
-			System.out.println("      Life remaining = " + life );
+			System.out.println("          the number of guesses you have left = " + life );
 			
 		}
 		
@@ -78,7 +78,7 @@ public class HangmanProject {
 	
 	public static void main(String[] args)
 	{
-		String word = "Pineapple";				// word to be guessed
+		String word = "pineapple";				// word to be guessed
 		int life = 7;							// the number of chances
 		guess(word,life);
 	}
