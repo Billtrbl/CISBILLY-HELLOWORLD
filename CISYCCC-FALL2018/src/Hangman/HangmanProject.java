@@ -14,10 +14,10 @@ public class HangmanProject {
 		int i = 0;
 		while(i < word.length())
 		{
-			filler[i] = '*';
+			filler[i] = '*';                   // will transform the word to become *****
 			if(word.charAt(i) == ' ')
 			{
-				filler[i]=' ';
+				filler[i] = ' ';
 			}
 			i++;
 		}
@@ -27,7 +27,7 @@ public class HangmanProject {
 		
 		Scanner s = new Scanner(System.in);
 		
-		ArrayList<Character> l=new ArrayList<Character>();
+		ArrayList<Character> l = new ArrayList<Character>();
 		
 		
 		while(life > 0)
