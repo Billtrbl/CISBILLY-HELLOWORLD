@@ -14,7 +14,7 @@ public class HangmanProject {
 		int i = 0;
 		while(i < word.length())
 		{
-			filler[i] = '*';                   // will transform the word to become *****
+			filler[i] = '*';                   
 			if(word.charAt(i) == ' ')
 			{
 				filler[i] = ' ';
@@ -55,6 +55,8 @@ public class HangmanProject {
 			else 
 			{ 
 				life--; 						// life will decrease if the character entered isn't right
+				
+				
 			}
 			
 			if(word.equals(String.valueOf(filler)))
@@ -78,8 +80,8 @@ public class HangmanProject {
 	
 	public static void main(String[] args)
 	{
-		String word = "pineapple";				// word to be guessed
-		int life = 7;							// the number of chances
+		String word = "watermelon";				// word to be guessed
+		int life = 5;							// the number of chances
 		guess(word,life);
 	}
 
