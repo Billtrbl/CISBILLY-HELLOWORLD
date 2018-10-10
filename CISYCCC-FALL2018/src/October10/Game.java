@@ -6,6 +6,14 @@ public class Game {
 	private String word;
 	private String guesses = "";
 	
+	// No arg Constructor
+	
+	public Game(String hint, String word)
+	{
+		this.hint = hint;
+		this.word = word;
+	}
+	
 	public String getHint() {
 		return hint;
 	}

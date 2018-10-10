@@ -52,11 +52,10 @@ public class HangmanProject {
 					}
 				}
 			}
-			else 
+			
+			else
 			{ 
-				life--; 						// life will decrease if the character entered isn't right
-				
-				
+				life--;						// life will decrease if the character entered isn't right
 			}
 			
 			if(word.equals(String.valueOf(filler)))
@@ -75,12 +74,13 @@ public class HangmanProject {
 		{
 			System.out.println("Game Over! (x_x) ");
 		}
+		
 	}
 	
 	
 	public static void main(String[] args)
 	{
-		String word = "watermelon";				// word to be guessed
+		String word = "Orange" ;				// word to be guessed
 		int life = 5;							// the number of chances
 		guess(word,life);
 	}

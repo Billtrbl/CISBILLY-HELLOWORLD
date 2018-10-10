@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class App 
 {
-	Game g = new Game();
+	Game g = new Game("Meow", "Cat");
+	Game g1 = new Game("Woof", "Dog");
+	
 	
 	// Control flow of game.
 	public void playGame()
 	{
-		g.setHint("Meow");
-		g.setWord("Cat");
-		
 		Scanner s = new Scanner(System.in);
 		// Repeat while not solved.
 		while(!g.isSolved())
