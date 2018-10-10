@@ -25,9 +25,9 @@ public class HangmanProject {
 		System.out.println(filler);
 		System.out.println("          the number of guesses you have left = " + life );
 		
-		Scanner s = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);                      // Scanner
 		
-		ArrayList<Character> l = new ArrayList<Character>();
+		ArrayList<Character> l = new ArrayList<Character>();     // Array
 		
 		
 		while(life > 0)
@@ -70,7 +70,7 @@ public class HangmanProject {
 			
 		}
 		
-		if(life == 0)
+		if(life == 0)                      
 		{
 			System.out.println("Game Over! (x_x) ");
 		}
