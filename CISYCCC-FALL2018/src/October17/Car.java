@@ -35,22 +35,19 @@ public class Car {
 	
 	public int getMilesTillNextPitStop(int distanceTraveled)
 	{
-			// if()
-				// if tank is below 5 , car goes to pit stop
-				// top-speed / miles per gallon
-			
-			// else car keeps going
+		int milesTillEmpty = 0;
+		// solve for 2 test cases..
 		
-		return 0;
+		return milesTillEmpty;
 	}
 	
 	private static void main(String[] args)
 	{
 		// need to determine n
-		int n = 0;
+		int n = 9;
 		
-		Car Toyota = new Car(140,20,35);
-		if(Toyota.getMilesTillNextPitStop(30) == n)
+		Car Car1 = new Car(100,20,10);
+		if(Car1.getMilesTillNextPitStop(20) == 9)
 		{
 			System.out.println("Test Pass");
 		}
@@ -59,10 +56,10 @@ public class Car {
 			System.out.println("Test Fail");
 		}
 		
-		Car Honda = new Car(125,25,40);
-
-		
-		Car Nissan = new Car(180,15,20);
+		// test case 1 : test miles left in car
+		// if mpg is 20
+		// if tanksize is 10 gallons
+		// if car has gone 20 miles the tank should have 9 gallons
 
 	}
 
