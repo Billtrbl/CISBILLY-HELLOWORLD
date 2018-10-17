@@ -41,13 +41,13 @@ public class Car {
 		return milesTillEmpty;
 	}
 	
-	private static void main(String[] args)
+	public static void main(String[] args)
 	{
 		// need to determine n
 		int n = 9;
 		
 		Car Car1 = new Car(100,20,10);
-		if(Car1.getMilesTillNextPitStop(20) == 9)
+		if(Car1.getMilesTillNextPitStop(20) == n)
 		{
 			System.out.println("Test Pass");
 		}
