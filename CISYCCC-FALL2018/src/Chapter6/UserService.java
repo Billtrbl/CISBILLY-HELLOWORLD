@@ -1,15 +1,24 @@
-package FilesListsAssignment;
+package Chapter6;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ReadingFiles 
+public class UserService 
 {
 	
-	private void fileDetails() throws IOException
+	
+	public void addUser()
 	{
+		
+	}
+	
+	public List<User> loadUser() throws IOException
+	{
+		List<User> users = new ArrayList<User>();
 		File f = new File("users.txt");
 		System.out.println("Does the file exist? " + f.exists());
 		
@@ -36,18 +45,24 @@ public class ReadingFiles
 				{
 					u.setLast_name(splitNames[1]);
 				}
-				
-				System.out.println(st);
+				users.add(u);
 			}
 		}
+		return users;
 	}
+	
+	// test method
 	
 	public static void main(String[] args)
 	{
-		ReadingFiles rf = new ReadingFiles();
+		UserService rf = new UserService();
 		try 
 		{
-			rf.fileDetails();
+			List<User> users = rf.loadUser()	;
+			for(User user : users)
+			{
+				System.out.println(user.getFirst_name() + " " + user.getLast_name());
+			}
 		}
 		catch (IOException e)
 		{

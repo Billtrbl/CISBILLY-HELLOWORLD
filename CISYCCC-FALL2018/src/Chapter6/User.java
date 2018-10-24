@@ -1,8 +1,11 @@
-package FilesListsAssignment;
+package Chapter6;
 
 public class User {
 
 	private String first_name;
+	private String middle_name;
+	private String last_name;
+
 	public String getFirst_name() {
 		return first_name;
 	}
@@ -21,8 +24,7 @@ public class User {
 	public void setLast_name(String last_name) {
 		this.last_name = last_name;
 	}
-	private String middle_name;
-	private String last_name;
+
 	
 	
 }
