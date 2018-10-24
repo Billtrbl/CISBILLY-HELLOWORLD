@@ -1,4 +1,4 @@
-package RaceCarAssignments;
+package RaceCarAssignment;
 
 public class Car {
 	
