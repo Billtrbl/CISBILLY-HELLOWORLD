@@ -36,12 +36,15 @@ public class CONTROLLER {
 				
 				
 				
-		// test case 1 : test miles left in car
-		// test case 2 : test gas left in car
+		// test case 1
 		// if mpg is 20
 		// if tanksize is 10 gallons
-		// if car has gone 20 miles the tank should have 9 gallons
+		// if car has gone 100 miles, should the car still goes on or goes to pit stop?
 		
+		// test case 2 
+		// if mpg is 10
+		// if tanksize is 10 gallons
+		// if car has gone 100 miles, should the car still goes on or goes to pit stop?
 	}
  
 	
