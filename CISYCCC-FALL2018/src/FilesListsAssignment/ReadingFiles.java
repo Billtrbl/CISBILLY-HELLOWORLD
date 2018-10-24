@@ -20,6 +20,9 @@ public class ReadingFiles
 			String st;
 			while((st = br.readLine()) != null)
 			{
+				// use the string.split method to break the string up into parts based on
+				// the spaces between each name.
+				
 				String[] splitNames = st.split(" ");
 				User u = new User();
 				u.setFirst_name(splitNames[0]);
