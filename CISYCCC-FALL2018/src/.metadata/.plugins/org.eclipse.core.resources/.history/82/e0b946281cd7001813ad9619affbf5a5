@@ -1,0 +1,22 @@
+package October17;
+
+public class RaceCar {
+
+	public static void main(String[] args)
+	{
+		Car u1 = new Car(0,0);
+		u1.setTopSpeed(120);
+		u1.setMpg(25);
+		u1.setTankSize(30);
+		
+		Car u2 = new Car(0,0);
+		u2.setTopSpeed(100);
+		u2.setMpg(35);
+		u2.setTankSize(40);
+		
+		Car u3 = new Car(0,0);
+		u3.setTopSpeed(150);
+		u3.setMpg(15);
+		u3.setTankSize(20);
+	}
+}
