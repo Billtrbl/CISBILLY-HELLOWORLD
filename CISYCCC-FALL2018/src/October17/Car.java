@@ -33,7 +33,7 @@ public class Car {
 		this.tankSize = tankSize;
 	}
 	
-	public int getMilesTillNextPitStop(int distanceTraveled)
+	public int getMilesTillNextPitStop(int distanceTraveled) // pit stop condition
 	{
 		int milesTillEmpty = 0;
 		// solve for 2 test cases..
@@ -43,11 +43,16 @@ public class Car {
 	
 	public static void main(String[] args)
 	{
-		// need to determine n
+		
+		// test case 1 : test miles left in car
+		// if mpg is 20
+		// if tanksize is 10 gallons
+		// if car has gone 20 miles the tank should have 9 gallons
+		
 		int n = 9;
 		
 		Car Car1 = new Car(100,20,10);
-		if(Car1.getMilesTillNextPitStop(20) == n)
+		if(Car1.getMilesTillNextPitStop(20) == n) // pit stop
 		{
 			System.out.println("Test Pass");
 		}
@@ -55,11 +60,6 @@ public class Car {
 		{
 			System.out.println("Test Fail");
 		}
-		
-		// test case 1 : test miles left in car
-		// if mpg is 20
-		// if tanksize is 10 gallons
-		// if car has gone 20 miles the tank should have 9 gallons
 
 	}
 
