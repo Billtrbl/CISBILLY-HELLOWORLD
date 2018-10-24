@@ -1,4 +1,4 @@
-package October17;
+package RaceCarAssignments;
 
 public class Car {
 	
@@ -41,5 +41,5 @@ public class Car {
 		return gasTillTankEmpty;
 	}
 	
-	
+
 }
