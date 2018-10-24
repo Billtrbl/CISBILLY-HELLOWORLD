@@ -1,0 +1,32 @@
+package October17;
+
+public class CONTROLLER {
+
+	// main method
+	
+	public static void main(String[] args)
+	{
+		// need to determine n
+		int n = 5; 
+		
+		Car Car1 = new Car(100,20,10);
+		if(Car1.getGasTillNextPitStop(100) >= n) // if the amount of gas left in the tank is more than n ...
+		{
+			System.out.println("Test Pass"); // car continues to race..
+		}
+		else
+		{
+			System.out.println("Test Fail"); // if it's less than n then car goes to pit-stop
+		}
+		
+		// test case 1 : test miles left in car
+		// test case 2 : test gas left in car
+		// if mpg is 20
+		// if tanksize is 10 gallons
+		// if car has gone 20 miles the tank should have 9 gallons
+		
+	}
+ 
+	
+	
+}

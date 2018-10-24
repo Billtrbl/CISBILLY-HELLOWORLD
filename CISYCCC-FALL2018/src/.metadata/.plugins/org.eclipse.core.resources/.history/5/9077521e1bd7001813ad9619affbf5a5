@@ -1,0 +1,69 @@
+package October17;
+
+public class Car {
+	
+	// car object ; top speed ; acceleration ; fuel tank size ; MPG ; pit stop duration
+	
+	private int topSpeed;
+	private int mpg;
+	private int tankSize;
+	int gasTillTankEmpty;
+	
+	public Car(int mpg, int tankSize)
+	{
+		this.topSpeed = topSpeed;
+		this.mpg = mpg;
+		this.tankSize = tankSize; 
+	}
+	public int getTopSpeed() {
+		return topSpeed;
+	}
+	public void setTopSpeed(int topSpeed) {
+		this.topSpeed = topSpeed;
+	}
+	public int getMpg() {
+		return mpg;
+	}
+	public void setMpg(int mpg) {
+		this.mpg = mpg;
+	}
+	public int getTankSize() {
+		return tankSize;
+	}
+	public void setTankSize(int tankSize) {
+		this.tankSize = tankSize;
+	}
+	
+	public int getGasTillNextPitStop(int distanceTraveled)
+	{
+		gasTillTankEmpty = tankSize - (distanceTraveled / mpg);
+		
+		
+		// solve for 2 test cases..
+		return gasTillTankEmpty;
+	}
+	
+	public static void main(String[] args)
+	{
+		// need to determine n
+		int n = 5;
+		
+		Car Car1 = new Car(20,10);
+		if(Car1.getGasTillNextPitStop(80) >= n)
+		{
+			System.out.println("Test Pass");
+		}
+		else
+		{
+			System.out.println("Test Fail");
+		}
+		
+		// test case 1 : test miles left in car
+		// test case 2 : test gas left in car
+		// if mpg is 20
+		// if tanksize is 10 gallons
+		// if car has gone 20 miles the tank should have 9 gallons
+
+	}
+
+}
