@@ -26,7 +26,7 @@ public class HangmanProject {
 		int i = 0;
 		while(i < word.length())
 		{
-			filler[i] = '*';                   
+			filler[i] = '*';                   // transform letters into "*"
 			if(word.charAt(i) == ' ')
 			{
 				filler[i] = ' ';
@@ -35,7 +35,7 @@ public class HangmanProject {
 		}
 		
 		System.out.println(filler);
-		System.out.println("          the number of guesses you have left = " + life );
+		System.out.println("          the number of guesses you have left = " + life );                     // number of guesses available before game over
 		
 		Scanner s = new Scanner(System.in);                      // Scanner
 		
@@ -72,9 +72,9 @@ public class HangmanProject {
 			if(word.equals(String.valueOf(filler)))
 			{
 				System.out.println(filler);
-				System.out.println("Congratulations, you won!!!!");
+				System.out.println("Congratulations, you won!!!!");          // player wins the game
 				try {
-					writer.write("Congratulations, you won!!!!");
+					writer.write("Congratulations, you won!!!!");            // print out to txt file 
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -89,9 +89,9 @@ public class HangmanProject {
 		
 		if(life == 0)                      
 		{
-			System.out.println("Game Over! (x_x) ");
+			System.out.println("Game Over! (x_x) ");                 // player loses
 			try {
-				writer.write("Game Over! (x_x) ");
+				writer.write("Game Over! (x_x) ");                   // print out to txt file
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -108,11 +108,11 @@ public class HangmanProject {
 		BufferedWriter writer = null;
 		try
 		{
-		    writer = new BufferedWriter(new FileWriter("hangman result111.txt"));
+		    writer = new BufferedWriter(new FileWriter("Hangman Result9.txt"));                         // the result of whether or not the player wins will print out here
 		    
 		    String[] word = new String[4];				// word to be guessed
 		    List<String> words = new ArrayList<String>();
-			File f = new File("Hangman Words.txt");
+			File f = new File("Hangman Words.txt");                                                     // the origin of the words for the hangman game 
 			System.out.println("Does the file exist?" + f.exists());
 			
 			if(f.exists())
@@ -143,27 +143,27 @@ public class HangmanProject {
 			// word[3] = "mango";
 			
 			int life = 5;							// the number of chances
-			HangmanProject hp = new HangmanProject();
+			HangmanProject hp = new HangmanProject();               // had to create an object of hp in order to run guess(...
 			char replay;
-			Scanner s = new Scanner(System.in);
+			Scanner s = new Scanner(System.in);       // scanner utility
 			do { 
-				Random rand = new Random();
+				Random rand = new Random();           
 
 				int  n = rand.nextInt(5); //3 is the maximum and the 0 is our minimum 
 				
-				hp.guess(writer,words.get(n),life); // 
+				hp.guess(writer,words.get(n),life); // the set up for the game
 			
 			do { // check the user's input
-				System.out.println("Type 0 to play again. Type 1 to quit.");
-				writer.write("Type 0 to play again. Type 1 to quit.");
+				System.out.println("Type 0 to play again. Type 1 to quit.");                   // to prompt player whether or not they want to continue or to end the game
+				writer.write("Type 0 to play again. Type 1 to quit."); 
 	            replay = s.next().charAt(0);
 	            if (replay != '0' && replay != '1') 
 	            {
-	            	System.out.println("Input not recognized ");
+	            	System.out.println("Input not recognized ");                               // will show if the player enters int other than 1 or 0
 	            	writer.write("Input not recognized.");
 	                }
 			}
-				while (replay != '0' && replay != '1');
+				while (replay != '0' && replay != '1');                                         // will replay if the player enter 0
 			} 	while (replay == '0'); // end of do-while loop
 
 		}
