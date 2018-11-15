@@ -20,5 +20,7 @@ public class HELLOWORLD
 	{
 		// Prints to the console.
 				System.out.println("Hello World");	
+				
+				// http://users.csc.calpoly.edu/~jdalbey/205/ProjectReqs/Hangman/UIprototype.html#SwingUI
 	}
 }
