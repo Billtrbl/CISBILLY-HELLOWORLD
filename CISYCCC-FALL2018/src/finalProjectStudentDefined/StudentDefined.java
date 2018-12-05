@@ -27,11 +27,10 @@ public class StudentDefined {
 	
 	// Acceptance Criteria:
 	// 1. Create a UI control that will help solve a game of Hangman
-	// 2. Show a list of categories to choose from
+	// 2. Show a list of letters that the user guessed
 	// 3. Disable the letters that the user already guessed
-	// 4. Dialog boxes of "Congratulation You Won!" , "Game Over" , and follow up with a "Play Again?" box
+	// 4. A message of "Congratulation You Won!" or "Game Over."
 	// 5. Draw the Hangman person little by little as the user guess the wrong letters
-	
 	
 	
 	

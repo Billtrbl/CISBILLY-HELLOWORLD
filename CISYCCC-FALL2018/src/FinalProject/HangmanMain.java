@@ -1,4 +1,4 @@
-package HangmanNovember28;
+package FinalProject;
 
 import java.util.Random;
 import java.io.BufferedReader;

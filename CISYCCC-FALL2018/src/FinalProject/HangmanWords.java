@@ -1,4 +1,4 @@
-package HangmanNovember28;
+package FinalProject;
 
 import java.util.ArrayList;
 import java.util.List;

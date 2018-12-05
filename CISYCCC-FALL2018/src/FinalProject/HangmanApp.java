@@ -1,9 +1,11 @@
-package HangmanNovember28;
+package FinalProject;
 
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -53,6 +55,9 @@ public class HangmanApp {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		JOptionPane.showMessageDialog(null, "Welcome to Hangman!");
+		JOptionPane.showMessageDialog(null, "Please Start A New Game");
+		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 700, 450);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -93,9 +98,16 @@ public class HangmanApp {
 		JButton enterButton = new JButton("ENTER");
 		enterButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (hm.getLife() > 0 && !hm.isGameWon()) { // Play the game until lives = 0 and game is not won
-					hm.guess(userInput.getText().toUpperCase().charAt(0)); // To transform all lower case letters to
-																			// upper case letters
+					if (hm.getLife() > 0 && !hm.isGameWon()) { // Play the game until lives = 0 and game is not won
+						
+						if (userInput.getText().equals("")) {
+							
+						}
+						else {
+							hm.guess(userInput.getText().toUpperCase().charAt(0)); // To transform all lower case letters to
+							// upper case letters
+						}
+					
 					livesLabel.setText("Lives: " + hm.getLife()); // Update the amount of lives available if user enter
 																	// the wrong letter
 					secretWordLabel.setText(hm.getWordToBeGuessed()); // Update the word to be guessed if user enter the
