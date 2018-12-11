@@ -70,10 +70,10 @@ public class HangmanApp {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		JOptionPane.showMessageDialog(null, "Welcome to Hangman!");
-		JOptionPane.showMessageDialog(null, "Please Start A New Game");
+		JOptionPane.showMessageDialog(null, "Welcome to Hangman!"); // welcome message
+		JOptionPane.showMessageDialog(null, "Please Start A New Game"); // direction pop up
 		
-		hMan0 = new ImageIcon(this.getClass().getResource("/Hangman 0.png")).getImage();
+		hMan0 = new ImageIcon(this.getClass().getResource("/Hangman 0.png")).getImage(); // pictures of hangman
 		hMan1 = new ImageIcon(this.getClass().getResource("/Hangman 1.png")).getImage();
 		hMan2 = new ImageIcon(this.getClass().getResource("/Hangman 2.png")).getImage();
 		hMan3 = new ImageIcon(this.getClass().getResource("/Hangman 3.png")).getImage();
@@ -126,7 +126,7 @@ public class HangmanApp {
 			public void actionPerformed(ActionEvent e) {
 					if (hm.getLife() > 0 && !hm.isGameWon()) { // Play the game until lives = 0 and game is not won
 						
-						if (txtGuessLetter.getText().equals("")) {
+						if (txtGuessLetter.getText().equals("")) { // if user enters blank, nothing will happen
 							
 						}
 						else {
@@ -145,10 +145,10 @@ public class HangmanApp {
 						lblLettersGuessed.setText("Game Over!"); // If lives = 0 before user guess the word, is game over
 					}
 					if (hm.isGameWon()) {
-						lblLettersGuessed.setText("Congratulations! You Won!");
+						lblLettersGuessed.setText("Congratulations! You Won!"); // If the user wins the game, this message will show
 					}
 					if (hm.getLife() == 8) {
-						imgLabel.setIcon(new ImageIcon(hMan0));
+						imgLabel.setIcon(new ImageIcon(hMan0)); // as life decreases the Hangman picture will change
 					}
 					if (hm.getLife() == 7) {
 						imgLabel.setIcon(new ImageIcon(hMan1));
@@ -189,10 +189,10 @@ public class HangmanApp {
 			public void actionPerformed(ActionEvent e) {
 				hm = new HangmanMain();
 				hm.NewGame();
-				lblLives.setText("Lives: " + hm.getLife());
+				lblLives.setText("Lives: " + hm.getLife()); 
 				lblSecretWord.setText(hm.getWordToBeGuessed());
-				lblLettersGuessed.setText("Letters Guessed: ");
-				imgLabel.setIcon(new ImageIcon(hMan0));
+				lblLettersGuessed.setText("Letters Guessed: "); 
+				imgLabel.setIcon(new ImageIcon(hMan0)); // the start picture of the hangman
 
 			}
 		});
