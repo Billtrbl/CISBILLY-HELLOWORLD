@@ -32,7 +32,7 @@ public class HangmanMain {
 	public void NewGame() { // Method to start a new game
 		hw = new HangmanWords();
 		secretWord = hw.newWord().toUpperCase(); // To transform all lowercase letters to uppercase
-		life = 10; // amount of lives/tries/guesses
+		life = 8; // amount of lives/tries/guesses
 		filler = new char[secretWord.length()];
 		int i = 0;
 		while (i < secretWord.length()) {
